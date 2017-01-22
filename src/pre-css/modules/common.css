@@ -1,0 +1,20 @@
+.center-wrapper {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+  position: relative;
+  width: auto;
+}
+.center-wrapper:before {
+  content: '';
+  display: table;
+}
+.center-wrapper:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.flex-box {
+  display: flex;
+}
