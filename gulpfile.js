@@ -10,25 +10,28 @@ var fileinclude = require('gulp-file-include');
 var imagemin    = require('gulp-imagemin');
 var changed     = require('gulp-changed');
 
+
+
+gulp.task('serve', ['css'], function() {
+  browserSync.init({
+    port: 9003,
+    server: './dist'
+  });
+
+
+    gulp.watch("src/pre-css/**/*.css", ['css']);
+    gulp.watch("src/**/*.*").on('change', browserSync.reload);
+
+});
+
 gulp.task('css', function () {
     return gulp.src('src/pre-css/style.css')
         .pipe( plumber() )
         .pipe( sourcemaps.init() )
         .pipe( postcss([importer, nested, nextcss]) )
         .pipe( sourcemaps.write('.') )
-        .pipe( gulp.dest('dist/css/') );
-});
-
-gulp.task('watch', function() {
-	return gulp.watch('src/pre-css/*.css', ['css']);
-});
-
-gulp.task('serve', function() {
-  browserSync.init({
-    notify: true,
-    port: 9003,
-    server: './dist'
-  });
+        .pipe( gulp.dest('dist/css/') )
+        .pipe(browserSync.stream());
 });
 
 gulp.task('include',  function() {
@@ -52,5 +55,5 @@ gulp.task('images', function() {
 });
 
 
-gulp.task('build', ['css', 'watch', 'serve', 'include', 'images']);
+gulp.task('build', ['css',  'serve', 'include', 'images']);
 gulp.task('default', ['css', 'build']);
