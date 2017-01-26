@@ -1,0 +1,25 @@
+.slider{
+	height: 100%;
+	min-height: 100%;
+	position: relative;
+	margin: 0;
+
+	h2 {
+	    font-size: 36px;
+	}
+	h2::after {
+		content: '';
+	    background: url(../../img/separador.png);
+	    position: absolute;
+	    width: 50px;
+	    height: 1px;
+	    top: 93px;
+	    left: 49%;
+	}
+	span{
+		display: block;
+		margin: 20px 0 30px;
+		font-size: 17px
+	}
+
+}
