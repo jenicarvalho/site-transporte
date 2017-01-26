@@ -1,0 +1,32 @@
+nav{
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+.nav-list{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-link{
+	display: inline-block;
+	font-size: 13px;
+	padding: 40px 20px;
+	text-transform: uppercase;
+	color: #fff;
+
+	&:hover{
+		color: #00e0d0;
+	}
+}
+
+.logo {
+    padding-top: 15px;
+}
+
+.top {
+    background: url(../img/fundo.jpg);
+    height: 100vh;
+    background-attachment: fixed;
+}
