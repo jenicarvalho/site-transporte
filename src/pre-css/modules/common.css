@@ -18,3 +18,32 @@
 .flex-box {
   display: flex;
 }
+
+.btn {
+    display: inline-block;
+    padding: 9px 22px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    text-shadow: none;
+    transition: background 0.3s ease;
+    background: transparent;  
+    border: 1px solid #00e0d0;
+}
+
+.btn-default{
+    color: #00e0d0;
+    border-color: #00e0d0;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active{
+  border: 1px solid #fff;
+  color: #fff;
+  background: transparent;
+}
+
+.title-default{
+   font-size: 25px;
+   color: #413d4b;
+   margin-top: 0;
+}
