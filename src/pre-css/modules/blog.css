@@ -1,0 +1,41 @@
+#blog {
+    background: #2e2856 url(../../img/blog-transporte-executivo.jpg);
+    background-attachment: fixed;
+
+    h5{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 1px;
+    margin: 0;
+	}
+
+	.title-default, .text-center{
+		text-align: center;
+		color: #fff;
+	}
+
+	.blog {
+	    margin: 5% 0;
+	    display: inline-block;
+
+	    .blog-item {
+	    padding: 0;
+	    background: #fff;
+	    margin: 0 5px;	
+			.blog-image{
+			height: 350px;
+			background-size: cover;
+			background-position: center
+			}
+		}
+
+		.blog-meta {
+	    color: #999;
+	    font-size: 13px;
+		}
+		.blog-conteudo {
+		    padding: 2em;
+		}
+	}
+}

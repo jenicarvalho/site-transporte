@@ -1,0 +1,17 @@
+.footer {
+	background: #eee url(../../img/fundo-rodape.jpg);
+    padding: 5% 0;
+    background-attachment: fixed;
+
+    p{
+    color: #fff;
+    font-size: 1em;
+    text-align: center;
+    }
+
+    span{
+    	float: right;
+    	font-style: italic;
+    }
+    a:hover{color: #fff; text-decoration: underline;}
+}
