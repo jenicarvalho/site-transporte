@@ -20,7 +20,8 @@ gulp.task('serve', ['css'], function() {
 
 
     gulp.watch("src/pre-css/**/*.css", ['css']);
-    gulp.watch("src/**/*.*").on('change', browserSync.reload);
+    gulp.watch('src/**/*').on('change', browserSync.reload);
+    gulp.watch('./src/**/*.html' , ['include']);
 
 });
 
