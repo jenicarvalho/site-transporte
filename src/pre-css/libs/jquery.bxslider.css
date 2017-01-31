@@ -14,7 +14,7 @@
 /** RESET AND LAYOUT
 ===================================*/
 
-.bx-wrapper {
+.slider .bx-wrapper {
   width: 100%;
   text-align: center;
   position: absolute;
@@ -52,8 +52,8 @@
 	padding: 0 10em;
 }
 
-.bx-wrapper .bx-pager,
-.bx-wrapper .bx-controls-auto {
+.slider .bx-wrapper .bx-pager,
+.slider .bx-wrapper .bx-controls-auto {
 	position: absolute;
 	bottom: -30px;
 	width: 100%;
