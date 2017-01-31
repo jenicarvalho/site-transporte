@@ -47,3 +47,11 @@
    color: #413d4b;
    margin-top: 0;
 }
+
+.text-center{text-align: center}
+
+
+.viewport-height{
+    padding: 20vh 0;
+    min-height: 100vh;
+}
