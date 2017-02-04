@@ -1,0 +1,52 @@
+#contato{
+	.form-control{
+		background-color: #bdbcff;
+	    border: 1px solid #fff;
+	    border-radius: 0;    
+	    margin: 10px 0;
+	    color: #fff;
+	    transition: all 0.5s ease;
+	}
+
+	.form-control:hover{
+		outline: 1px solid #66afe9;
+	}
+
+	.btn.btn-default {
+	    background: #2d2851;
+	    color: #fff;
+	}
+
+	.btn-default:hover{
+		border: none;
+		background: #100d21
+	}
+
+	address {
+	    font-style: normal;
+
+	    span{
+	    	font-size: 15px;
+    		font-style: italic;
+	    }
+	}
+
+    h4{
+    	font-size: 20px;
+		margin: 5px 0;
+    }
+
+
+	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	  color: #fff;
+	}
+	::-moz-placeholder { /* Firefox 19+ */
+	  color: #fff;
+	}
+	:-ms-input-placeholder { /* IE 10+ */
+	  color: #fff;
+	}
+	:-moz-placeholder { /* Firefox 18- */
+	  color: #fff;
+	}
+}
